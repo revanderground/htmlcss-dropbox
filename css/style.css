@@ -28,14 +28,16 @@ header{
     vertical-align: middle;
     width: 100%;
     position: fixed;
+    z-index: 1; /* ho dovuto usare lo z-index qui perché il position fixed viene sconfitto allo scorrimento nella sezione 4 dei rettangoli colorati, lì ho usato il position absolute per centrare i loghi nei rettangoli colorati  (quindi senza usare il padding perché mi rimpicciolisce troppo i loghi), perciò son ritornato quassù per impostare lo z-index perché altrimenti non riesco a fare il bonus con l'hover perché se imposto uno z-index:-1 in quel punto non mi fa l'effetto hover per il bonus*/
    
 }
 
 .logo{
-    width: 100px;
+    width: 115px;
     padding-left: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 20px;
 }
 
 .navleft{
@@ -58,10 +60,7 @@ header{
     list-style-type: none;
     justify-content: space-between;
     display:flex;
-    vertical-align: middle;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    
+    vertical-align: middle;    
 }
 
 .textpattern{
@@ -90,17 +89,20 @@ header{
 }
 
 .itembox{
-    padding-left: 20px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 17px 10px;
+    height:100%;
+}
 
+.itembox:hover{
+    border-bottom: 2px solid red; 
+    cursor: pointer;
 }
 
 .bottonebox{
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-top: 17px;
 }
 
 .bottonebox2{
@@ -199,10 +201,17 @@ p{
     font-size: 25px;
     padding-top:40px;
     padding-bottom:40px;
+    padding-left: 10px;
 
 }
 
+#checkline{
+    padding-left: 10px;
+}
 
+.checklinespan{
+    padding-right: 30px;
+}
 
 .checkbox-round {
     width: 14px;
@@ -215,6 +224,7 @@ p{
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
+    
 }
 
 .checkbox-round:checked {
@@ -422,6 +432,7 @@ h3{
     width: 100%;
 }
 
+/* Section4 */
 .containerS4{
     display:flex;
     flex-direction: row;
@@ -435,15 +446,15 @@ h3{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    z-index: -1;
 
 }
 
 .s4center{
     width: calc(100% / 3);
+    height: 420px;
     background-color: #F5F5F5;
     padding: 0 30px;
-    overflow:auto;
+    overflow: auto;
 }
 
 .logocenter{
@@ -454,19 +465,23 @@ h3{
 .logorect{
     width:50%;
     filter: invert(100%);
-    margin: 0;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: absolute;
 }
+
 
 .rect{
     width: 50%;
     height: 50%;
     position: relative;
-    
 }
+
+.rect:hover{
+    border: 10px solid rgba(255,255,255,0.5);
+}
+
 
 .rect1{
     background-color: var(--green);
@@ -540,6 +555,8 @@ h3{
 .container6{
     width: 630px;
     margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .title6{
@@ -547,7 +564,6 @@ h3{
     color: black;
     font-size: 25px;
     font-weight: bold;
-    padding-top: 100px;
     padding-bottom: 50px;
     
 }
@@ -590,3 +606,22 @@ h3{
     display:none;
 }
 
+/* footer */
+
+footer{
+    width:100%;
+    background-color:black;
+}
+
+.boxfooter{
+    width:900px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.columnfooter{
+    width: calc(100% / 5);
+    display: flex;
+    flex-direction: column;
+}
