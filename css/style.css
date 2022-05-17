@@ -163,8 +163,11 @@ p{
 
 
 .box2{
-    padding-top: 50px;
-    
+    padding-top: 50px; 
+}
+
+.box2b{
+    padding-bottom: 100px;
 }
 
 
@@ -271,6 +274,16 @@ h3{
     padding-bottom: 30px;
 }
 
+.linkaction{
+    list-style-type: none;
+}
+
+.linkaction:visited{
+    list-style-type: none;
+    color:#0061FF;
+}
+
+
 .columnlist{
     display: flex;
     flex-direction:column;
@@ -333,7 +346,7 @@ h3{
 
 /* Section3 */
 
-.section3{
+.section2b{
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -366,4 +379,23 @@ h3{
     background-color: #ffffff;
     padding: 7px 13px;
     text-decoration: none;
+}
+
+/*Section3main */
+
+.cards-box{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(100% / 3);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.imgcard{
+    width: 100%;
 }
