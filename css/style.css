@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+:root {
+    --green: #A2D39B;
+    --bourdeaux: #61082B;
+    --azure: #0093CE;
+    --red: #FF1C1C;
+    --greyblue: #B4D0E7;
+    --yellow: rgb(255, 234, 0);
+    --darkblue:darkblue;
+    --darkred:rgba(205, 2, 2, 0.913);
+
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -60,6 +72,11 @@ header{
 .textpattern1{
     font-family: 'Open Sans', sans-serif;
     font-size: 10.5px;
+}
+
+.textpattern2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
 }
 
 .navmenuitem{
@@ -398,4 +415,80 @@ h3{
 
 .imgcard{
     width: 100%;
+}
+
+.containerS4{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.s4side{
+    width:calc(100% / 3 );
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.s4center{
+    width: calc(100% / 3);
+    background-color: #F5F5F5;
+    padding: 0 30px;
+}
+
+.logocenter{
+    width:50%;
+    padding: 30px 0;
+}
+
+.logorect{
+    width:50%;
+    filter: invert(100%);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rect{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    
+}
+
+.rect1{
+    background-color: var(--green);
+}
+
+.rect2{
+    background-color: var(--bourdeaux);
+}
+
+.rect3{
+    background-color: var(--azure);
+}
+
+.rect4{
+    background-color: var(--red);
+}
+
+.rect5{
+    background-color: var(--darkred);
+}
+
+.rect6{
+    background-color: var(--greyblue);
+}
+
+.rect7{
+    background-color: var(--darkblue);
+}
+
+.rect8{
+    background-color: var(--yellow);
 }
