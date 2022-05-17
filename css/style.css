@@ -492,3 +492,35 @@ h3{
 .rect8{
     background-color: var(--yellow);
 }
+
+/* Section5 */
+
+.section5{
+    background-color: var(--greyblue);
+    width:100%;
+    height:250px;
+}
+
+.S5L{
+    width:50%;
+}
+
+.title5{
+    color: var(--bourdeaux);
+    padding-left: 30px;
+    padding-top: 60px;
+
+}
+
+.bottonebox5{
+    padding-left: 100px;
+    padding-top: 75px;
+
+}
+
+.bottone5{
+    color:rgb(0, 0, 0);
+    background-color: #F5F5F5;
+    padding: 7px 25px;
+    text-decoration: none;
+}
