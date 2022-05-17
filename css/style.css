@@ -300,6 +300,11 @@ h3{
     color:#0061FF;
 }
 
+.shortline{
+    width:35px;
+    background-color: #D8D8DA;
+    height:1px;
+}
 
 .columnlist{
     display: flex;
@@ -422,7 +427,6 @@ h3{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    
 }
 
 .s4side{
@@ -431,12 +435,15 @@ h3{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
+    z-index: -1;
+
 }
 
 .s4center{
     width: calc(100% / 3);
     background-color: #F5F5F5;
     padding: 0 30px;
+    overflow:auto;
 }
 
 .logocenter{
@@ -509,7 +516,6 @@ h3{
     color: var(--bourdeaux);
     padding-left: 30px;
     padding-top: 60px;
-
 }
 
 .bottonebox5{
@@ -524,3 +530,63 @@ h3{
     padding: 7px 25px;
     text-decoration: none;
 }
+
+.shortline2{
+    width:80px;
+}
+
+/* Section6 */
+
+.container6{
+    width: 630px;
+    margin: 0 auto;
+}
+
+.title6{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    
+}
+
+.questionbox{
+    width: 100%; 
+}
+
+.boxquestion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width:100%;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+ 
+
+
+.question{
+    padding: 30px 0;
+}
+
+.boxquestion:hover .answer{
+    display: block;
+}
+
+
+
+.arrowq{
+    text-align: right;
+    padding: 30px 0;
+    font-size: 10px;
+    
+}
+
+.answer{
+    padding-bottom: 15px;
+    display:none;
+}
+
